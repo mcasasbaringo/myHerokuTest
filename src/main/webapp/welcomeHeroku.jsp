@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <html>
 	<head>
 		<title>Brand</title>
@@ -14,7 +15,7 @@
 						<img src="./resources/heroku_logo.png" width="10%" />
 					</td>
 					<td style="width:5%; color:white;">
-						<a href="/pruebas/">Salir</a>
+						<a href="">Salir</a>
 					</td>
 				</tr>
 			</table>
