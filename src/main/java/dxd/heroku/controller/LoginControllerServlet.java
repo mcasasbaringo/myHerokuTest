@@ -21,8 +21,22 @@ public class LoginControllerServlet extends HttpServlet {
 				
 				rd = request.getRequestDispatcher("/welcomeHeroku.jsp");
 	
+			}else{
+				request.setAttribute("error", "Usuario y/o Contraseña no validos");
 			}
 			
+			rd.forward(request, response);		
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+	
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {		
+		try {
+		
+			RequestDispatcher rd = request.getRequestDispatcher("./index.jsp");
+	
 			rd.forward(request, response);		
 			
 		} catch (Exception e) {

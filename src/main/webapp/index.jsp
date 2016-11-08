@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 	<head>
 		<title>Inicio</title>
@@ -11,6 +12,11 @@
 			<div class="center" style="width: 15em; margin: 0 auto; margin-top:50px">
 				<form action="Login" method="post"> 
 					<table style="color:#79589f; line-height:1.1;font-weight:200; font-size:20px;">
+						<c:if test="${error != null}">
+							<tr style="color:red; font-size:16px; text-align:center; background-color: rgb(250,250,250)">
+								<td colspan="2" >${error}</td>
+							</tr>
+						</c:if>
 						<tr>
 							<td>Usuario:</td>
 							<td><input type="text" name="name" value="" />

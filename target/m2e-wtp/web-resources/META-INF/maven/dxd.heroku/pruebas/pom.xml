@@ -27,16 +27,6 @@
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
 		</dependency>
-			
-		
-		
-		<!-- <dependency>  
-		    <groupId>javax</groupId>    
-		    <artifactId>javaee-web-api</artifactId>    
-		    <version>7.0</version>
-		    --> <!-- Put here the version of your Java EE app, in my case 7.0 -->
-		  <!--   <scope>provided</scope>
-		</dependency>  -->
        
 	</dependencies>
   
@@ -72,8 +62,6 @@
 				</configuration>
 			</plugin> 
 			
-			
-			<!-- ELIMINAR -->
 			<plugin>
 		          <groupId>org.apache.maven.plugins</groupId>
 		          <artifactId>maven-dependency-plugin</artifactId>
@@ -95,7 +83,7 @@
 		            </execution>
 		          </executions>
 		   </plugin>
-			<!-- FIN ELIMINAR -->
+
    		</plugins>
   	</build>
 </project>
